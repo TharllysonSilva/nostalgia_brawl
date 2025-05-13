@@ -3,5 +3,7 @@ import 'package:flutter/material.dart';
 import 'game/nostalgia_game.dart';
 
 void main() {
-  runApp(GameWidget(game: NostalgiaGame()));
+  runApp(
+    GameWidget(game: NostalgiaGame()),
+  );
 }

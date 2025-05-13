@@ -1,11 +1,14 @@
 import 'package:flame/components.dart';
 
 class Enemy extends SpriteComponent {
-  Enemy() : super(size: Vector2(64, 64));
+  Enemy({required Vector2 position})
+      : super(
+          size: Vector2(64, 64),
+          position: position,
+        );
 
   @override
   Future<void> onLoad() async {
-    sprite = await Sprite.load('characters/enemy.png');
-    position = Vector2(250, 200);
+    sprite = await Sprite.load('enemy/shade_idle.png');
   }
 }
